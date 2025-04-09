@@ -1,0 +1,56 @@
+.button_ {
+    -fx-background-radius: 15px;
+    -fx-background-color: #c9ffcd;
+}
+
+.button_fond_bleu{
+-fx-background-radius:15px}
+
+.button_fond_bleu:hover{
+    -fx-background-color: #e7efff ;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+
+.button_:hover {
+    -fx-background-color: #45a049;
+    -fx-text-fill:white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+}
+
+.label_ {
+    -fx-text-fill:#c9ffcd;
+}
+
+.label_:hover {
+    -fx-text-fill: #27ae60;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.mot_de_passe:hover{
+    -fx-text-fill: red;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.conteneur{
+-fx-background-radius:40px;
+}
+
+.conteneur_{
+-fx-background-radius:80px;
+}
+
+.button_x{
+    -fx-background-color:#ff6262;
+    -fx-background-radius:20px;
+}
+.button_x:hover{
+    -fx-background-radius:20px;
+    -fx-text-fill: white;
+    -fx-background-color:red;
+}

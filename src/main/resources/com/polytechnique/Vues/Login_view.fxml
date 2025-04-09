@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="conteneur_" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.polytechnique.Controlleurs.Login_controller">
+   <children>
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="conteneur_">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="conteneur_" stylesheets="@../CSS/Style.css">
+               <children>
+                  <ImageView fitHeight="800.0" fitWidth="1200.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../PHOTOS/night.jpg" />
+                     </image></ImageView>
+                  <AnchorPane layoutX="318.0" layoutY="130.0" opacity="0.6" prefHeight="641.0" prefWidth="564.0" style="-fx-background-color: black;" styleClass="conteneur" translateY="-50.0" />
+                  <Label fx:id="enregistrer_label" alignment="CENTER" layoutX="519.0" layoutY="153.0" prefHeight="49.0" prefWidth="176.0" text="S'ENREGISTRER" textFill="WHITE" translateY="-50.0" visible="false">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nom_enregistrement_textfield" alignment="CENTER" layoutX="422.0" layoutY="248.0" prefHeight="50.0" prefWidth="380.0" promptText="Nom" translateY="-50.0" visible="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="prenom_enregistrement_textfield" alignment="CENTER" focusTraversable="false" layoutX="422.0" layoutY="328.0" prefHeight="50.0" prefWidth="380.0" promptText="Prenom" translateY="-50.0" visible="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="valider_enregistrement_button" layoutX="457.0" layoutY="648.0" mnemonicParsing="false" onAction="#on_action_valider_enregistrement" prefHeight="50.0" prefWidth="310.0" styleClass="button_" text="Valider" translateY="-50.0" visible="false">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="telephone_enregistrement_textfield" alignment="CENTER" focusTraversable="false" layoutX="422.0" layoutY="408.0" prefHeight="50.0" prefWidth="380.0" promptText="Telephone" translateY="-50.0" visible="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="mail_enregistrement_textfield" alignment="CENTER" focusTraversable="false" layoutX="422.0" layoutY="488.0" prefHeight="50.0" prefWidth="380.0" promptText="Mail" translateY="-50.0" visible="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password_enregistrement_passwordfield" alignment="CENTER" layoutX="422.0" layoutY="568.0" prefHeight="50.0" prefWidth="380.0" promptText="Mot de passe" translateY="-50.0" visible="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <Label fx:id="déja_label" layoutX="462.0" layoutY="703.0" prefHeight="30.0" prefWidth="130.0" text="j'ai déjà un compte" textFill="WHITE" translateX="20.0" translateY="-50.0" visible="false" />
+                  <Label fx:id="se_connecter_enregistrement_label" layoutX="593.0" layoutY="703.0" onMouseClicked="#on_clicked_connecter_enregistrement" prefHeight="30.0" prefWidth="116.0" styleClass="label_" text="Se connecter ?" textFill="WHITE" translateX="20.0" translateY="-50.0" visible="false">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="cardena_1" fitHeight="30.0" fitWidth="34.0" layoutX="389.0" layoutY="578.0" pickOnBounds="true" translateY="-50.0" visible="false">
+                     <image>
+                        <Image url="@../PHOTOS/white_password.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="phone_1" fitHeight="30.0" fitWidth="34.0" layoutX="389.0" layoutY="418.0" pickOnBounds="true" translateY="-50.0" visible="false">
+                     <image>
+                        <Image url="@../PHOTOS/white_phone.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="mail_1" fitHeight="30.0" fitWidth="34.0" layoutX="389.0" layoutY="498.0" pickOnBounds="true" translateY="-50.0" visible="false">
+                     <image>
+                        <Image url="@../PHOTOS/white_mail.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="valider_connection_button" layoutX="439.0" layoutY="553.0" mnemonicParsing="false" onAction="#on_action_valider_connection" prefHeight="50.0" prefWidth="310.0" styleClass="button_" stylesheets="@../CSS/Style.css" text="Valider" translateY="-50.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="mail_connection_textfield" alignment="CENTER" layoutX="432.0" layoutY="498.0" prefHeight="50.0" prefWidth="380.0" promptText="Mail" styleClass="textField" translateX="-30.0" translateY="-215.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password_connection_passwordfield" alignment="CENTER" layoutX="432.0" layoutY="578.0" prefHeight="50.0" prefWidth="380.0" promptText="Mot de passe" translateX="-30.0" translateY="-200.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <Label fx:id="nouveau_label" alignment="CENTER" layoutX="484.0" layoutY="703.0" prefHeight="30.0" prefWidth="116.0" text="je suis nouveau" textFill="WHITE" translateY="-50.0" />
+                  <Label fx:id="enregistrer_connection_label" alignment="CENTER" layoutX="603.0" layoutY="703.0" onMouseClicked="#on_clicked_enregistrer_connection" prefHeight="30.0" prefWidth="110.0" styleClass="label_" text="S'enregistrer" textFill="WHITE" translateY="-50.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="cardena_2" fitHeight="30.0" fitWidth="34.0" layoutX="399.0" layoutY="588.0" pickOnBounds="true" translateX="-30.0" translateY="-200.0">
+                     <image>
+                        <Image url="@../PHOTOS/white_password.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="mail_2" fitHeight="30.0" fitWidth="34.0" layoutX="399.0" layoutY="508.0" pickOnBounds="true" translateX="-30.0" translateY="-215.0">
+                     <image>
+                        <Image url="@../PHOTOS/white_mail.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="se_connecter_label" alignment="CENTER" layoutX="509.0" layoutY="203.0" prefHeight="49.0" prefWidth="176.0" styleClass="label_nouveau" text="SE CONNECTER" textFill="WHITE" translateY="-50.0">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="oublié_connection_label" alignment="CENTER" layoutX="599.0" layoutY="743.0" onMouseClicked="#on_clicked_forget_password" prefHeight="30.0" prefWidth="176.0" styleClass="mot_de_passe" text="mot de passe oublié ?" textFill="WHITE" translateY="-300.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="close_button" layoutX="1148.0" layoutY="14.0" mnemonicParsing="false" onAction="#on_action_close" prefHeight="24.0" prefWidth="38.0" style="-fx-background-color: red;" styleClass="button_x" text="X" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
