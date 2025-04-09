@@ -159,20 +159,26 @@ public class Login_controller implements Initializable {
         }
         else{
             // si les champs ne sont pas vide on vérifie si l'utilisateur existe déjà
+            System.out.println("1");
             u.setMail(mail_enregistrement_textfield.getText());
             u.setNom(nom_enregistrement_textfield.getText());
             u.setPrenom(prenom_enregistrement_textfield.getText());
             u.setTel(telephone_enregistrement_textfield.getText());
             u.setMot_de_passe(password_enregistrement_passwordfield.getText());
             System.out.println(mail_enregistrement_textfield.getText());
+            System.out.println("2");
+
 
             // j'ai considérer dans la logique de l'application que l'ensemble addresse mail et mot de passe iden-
             // tifie de manière unique chaque utilisateur
             Utilisateur u2= new Utilisateur();
             u2 = Table_Utilisateur.rechercher(mail_connection_textfield.getText(),password_connection_passwordfield.getText());
+            System.out.println("3");
 
             if(u2==null)
             {
+                System.out.println("4");
+
                 // si on ne trouve pas d'utilisateur portant les informations remplies plus haut,
                 // on l'ajoute a la bd puis on passe a la vue suivante
                 boolean b = Table_Utilisateur.ajouterUtilisateur(u);
@@ -181,11 +187,14 @@ public class Login_controller implements Initializable {
                 // on passe a la vue suivante
                 if(b)  Main.setRout("Main_view");
                 System.out.println(mail_enregistrement_textfield.getText());
+                System.out.println("5");
 
             }
             else{
                 // s la recherche n'est pas nulle , on affiche un messave
                 showAlert("Alerte","Ce compte existe déjà");
+                System.out.println("6");
+
             }
         }
     }

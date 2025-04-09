@@ -62,9 +62,9 @@ public class Table_Appareil {
             if (rs.next()) {
                 appareil = new Appareil(
                         rs.getString("numero_Serie"),
+                        rs.getString("nom"),
                         rs.getString("categorie"),
                         rs.getString("type"),
-                        rs.getString("nom"),
                         rs.getString("id_utilisateur")
                 );
             }

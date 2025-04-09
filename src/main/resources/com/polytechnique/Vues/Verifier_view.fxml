@@ -63,8 +63,8 @@
                         <Font name="System Bold" size="26.0" />
                      </font>
                   </Label>
-                  <Button fx:id="termine_button" layoutX="965.0" layoutY="639.0" mnemonicParsing="false" onAction="#on_action_terminer" prefHeight="47.0" prefWidth="121.0" styleClass="button_" text="TERMINÉ" />
-                  <TextField fx:id="rechercher_textfield" alignment="CENTER" focusTraversable="false" layoutX="400.0" layoutY="245.0" onAction="#rechercher" prefHeight="60.0" prefWidth="401.0" promptText="Rechercher">
+                  <Button fx:id="retour_button" layoutX="819.0" layoutY="639.0" mnemonicParsing="false" onAction="#on_action_retour" prefHeight="47.0" prefWidth="121.0" styleClass="button_x" text="RETOUR" />
+                  <TextField fx:id="rechercher_textfield" alignment="CENTER" focusTraversable="false" layoutX="400.0" layoutY="245.0" onAction="#on_action_rechercher" prefHeight="60.0" prefWidth="401.0" promptText="Rechercher">
                      <font>
                         <Font size="28.0" />
                      </font>
@@ -85,7 +85,7 @@
                                                 <TableColumn fx:id="type_column" prefWidth="195.0" text="Types" />
                                             </columns>
                                           </TableView>
-                                          <Label fx:id="label_egare" alignment="CENTER" layoutX="262.0" layoutY="14.0" prefHeight="36.0" prefWidth="249.0" text="Appareil égaré" visible="false">
+                                          <Label fx:id="label_egare" alignment="CENTER" layoutX="224.0" layoutY="14.0" prefHeight="36.0" prefWidth="355.0" text="Caractéristique de l'appareil égaré">
                                              <font>
                                                 <Font name="System Bold Italic" size="17.0" />
                                              </font>
@@ -108,6 +108,7 @@
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
+                  <Button fx:id="termine_button" layoutX="948.0" layoutY="639.0" mnemonicParsing="false" onAction="#on_action_rechercher" prefHeight="47.0" prefWidth="121.0" styleClass="button_" text="RECHERCHER" />
                </children>
             </AnchorPane>
          </children>
